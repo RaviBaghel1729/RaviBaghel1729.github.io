@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Kumar Baghel | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <style>
+        #pimg1{
+            object-fit: contain;
+        }
+         #pimg{
+            background-size:contain ;
+        }
+        :root {
+            --primary-blue: #2563eb;
+            --dark-slate: #1e293b;
+            --light-gray: #f8fafc;
+            --text-main: #334155;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--light-gray); 
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Removing the raw borders and replacing with soft styles */
+        .custom-nav { background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav-link-custom { text-decoration: none; color: var(--dark-slate); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .nav-link-custom:hover { color: var(--primary-blue); }
+
+        .hero-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .social-bar { background: var(--dark-slate); color: white; }
+        .social-bar i { cursor: pointer; transition: 0.2s; }
+        .social-bar i:hover { color: var(--primary-blue); }
+
+        .project-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: 0.3s;
+        }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.08); }
+        .dpimg {transition: transform 0.3s ease;  }
+        .dpimg:hover {transform: scale(1.2); }  
+
+
+
+        .skill-section { background: #ffffff; border-radius: 12px; padding: 20px; transition: 0.3s; }
+        .skill-header { background: #f1f5f9; border-radius: 8px; color: var(--primary-blue); font-weight: 700; }
+        
+        .btn-primary { background-color: var(--primary-blue); border: none; padding: 10px 25px; font-weight: 600; }
+        .btn-outline-dark { border-width: 2px; padding: 10px 25px; font-weight: 600; }
+
+        ul { list-style: none; padding-left: 0; }
+        ul li::before { content: "•"; color: var(--primary-blue); font-weight: bold; display: inline-block; width: 1em; }
+        
+        h1, h2, h3 { color: var(--dark-slate); letter-spacing: -0.5px; }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="custom-nav d-flex justify-content-md-center align-items-center" style="height: 100px;"> 
+        <nav class="d-flex justify-content-between align-items-center" style="height: 80px; width: 90%;">
+            <div>
+                <h2 class="mb-0 fw-bold">RAVI KUMAR</h2>
+                <p class="mb-0 text-primary fw-semibold" style="font-size: 0.75rem; letter-spacing: 2px;">JAVA FULL STACK DEVELOPER</p>
+            </div>
+            <div class="d-flex gap-4">
+                <a href="#about" class="nav-link-custom">ABOUT</a>
+                <a href="#resume" class="nav-link-custom">RESUME</a>
+                <a href="#projects" class="nav-link-custom">PROJECTS</a>
+                <a href="#contact" class="nav-link-custom">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- about me -->
+    <div id="about" class="d-flex justify-content-center align-items-center" style="height: 750px;">
+        <div class="hero-card w-75 d-flex" style="height: 550px;">
+            <div class="w-50 d-flex flex-column">
+                <div class="gap-4 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                    <div class="rounded-circle overflow-hidden shadow-lg" style="height: 220px; width: 220px; border: 5px solid #f1f5f9;">
+                        <img src="./image/dp (2).jpg" class="dpimg" alt="Ravi Kumar" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="fw-bold mb-1">RAVI KUMAR BAGHEL</h3>
+                        <p class="text-muted">JAVA FULL STACK DEVELOPER</p>
+                    </div>
+                </div>
+                <div class="social-bar d-flex justify-content-around align-items-center fs-5" style="height: 60px;">
+                        <a href="https://www.linkedin.com/in/ravi-baghel-41193a328/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ravibaghel927"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:baghelravi6806@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+                        
+                </div>
+            </div>
+            <div class="w-50 p-5 d-flex flex-column justify-content-center bg-light">
+                <h1 class="display-3 fw-bold mb-3">Hello</h1>
+                <p class="fs-5 text-secondary mb-4">I am a Java Full Stack Developer with a strong foundation in building scalable backend systems and responsive frontend applications. I enjoy working with Java, Spring Boot, REST APIs, and modern frontend technologies to create reliable and user-friendly solutions.</p>
+                <p class="text-muted mb-4">I am passionate about learning new technologies, writing clean and maintainable code, and continuously improving my problem-solving skills. My goal is to contribute to impactful projects while growing as a software engineer.</p>
+                <div class="d-flex gap-3">
+                    <a href="#resume" class="btn btn-primary rounded-pill shadow">Resume</a>
+                    <a href="#projects" class="btn btn-outline-dark rounded-pill">Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Projects</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">A showcase of my technical expertise in Java Full Stack development.</p>
+        </div>
+
+        <div class="d-flex flex-column gap-5 align-items-center">
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;">
+                    <div class="d-flex flex-column gap-3 p-5">
+                        <h4 class="fw-bold text-primary">NOTE APP</h4>
+                        <p class="text-muted">Note App is a full-stack application built using React for the frontend and Spring Boot REST API for the backend. It allows users to securely log in and perform CRUD operations such as creating, updating, and deleting notes. The application ensures smooth communication between frontend and backend using RESTful services, providing a responsive and efficient user experience.</p>
+                    </div>
+                </div>
+                <div style="width: 45%;">
+                    <img src="./image/note1.png" id="pimg1" class="project-img w-100 h-100" alt="Tech">
+                </div>
+            </div>
+
+            
+
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;">
+                    <div class="d-flex flex-column gap-3 p-5">
+                        <h4 class="fw-bold text-primary">TUTORIAL APP</h4>
+                        <p class="text-muted">Tutorial App is a full-stack learning platform developed using React for the frontend and Spring Boot REST API for the backend. It enables admins to upload and manage tutorial videos, while users can search, view, like, and interact with content. The application follows RESTful architecture to ensure secure, scalable, and seamless communication between the client and server.</p>
+                    </div>
+                </div>
+                <div style="width: 45%;"><img src="./image/tutorial.png" id="pimg1" class="project-img w-100 h-100" alt="Tech"></div>
+            </div>
+
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;">
+                    <div class="d-flex flex-column gap-3 p-5">
+                        <h4 class="fw-bold text-primary">AW - ELASTIC BEANSTALK (Blue-Green Deployment)</h4>
+                        <p class="text-muted">AWS Elastic Beanstalk Blue-Green Deployment is a deployment strategy where two identical environments are used: Blue (current live version) and Green (new version). The new application version is deployed to the Green environment, tested safely without affecting users, and once verified, traffic is switched from Blue to Green. This approach enables zero-downtime deployments, easy rollback, and reduced deployment risk.</p>
+                    </div>
+                </div>
+                <div style="width: 45%;"><img src="./image/bluegreen.webp" id="pimg" class="project-img w-100 h-100" alt="Tech"></div>
+            </div>
+
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;">
+                    <div class="d-flex flex-column gap-3 p-5">
+                        <h4 class="fw-bold text-primary">S3 STATIC WEB HOSTING</h4>
+                        <p class="text-muted">AWS S3 Static Website Hosting allows you to host static websites (HTML, CSS, JavaScript, images) directly from an S3 bucket without using a server. By enabling static website hosting and setting proper permissions, S3 serves web content with high availability, scalability, and low cost. It is commonly used for hosting frontend applications like React build files.</p>
+                    </div>
+                </div>
+                <div style="width: 45%;"><img src="./image/s3staticwebhosting.svg" class="project-img w-100 h-100" alt="Tech"></div>
+            </div>
+
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;">
+                    <div class="d-flex flex-column gap-3 p-5">
+                        <h4 class="fw-bold text-primary">AWS - EFS SHARED STORAGE (mini project)</h4>
+                        <p class="text-muted">Implemented a shared file storage solution using Amazon EFS, mounted on multiple Red Hat EC2 instances via NFS utilities. Configured common access permissions to enable real-time file creation, modification, and deletion (CRUD) across all EC2 instances, ensuring consistent and synchronized data access.</p>
+                    </div>
+                </div>
+                <div style="width: 45%;"><img src="./image/EFS.jpg" id="pimg" class="project-img w-100 h-100" alt="Tech"></div>
+            </div>
+
+            <div class="project-card d-flex w-75" style="height: 400px;">
+                <div class="d-flex justify-content-center align-items-center" style="width: 55%;"><div class="p-5"><h4>AWS - S3 CORS (mini project)</h4><p class="text-muted">Configured Cross-Origin Resource Sharing (CORS) on an Amazon S3 bucket to securely allow cross-domain access from a frontend application. Enabled controlled HTTP methods (GET, POST) and headers to support seamless integration between S3-hosted resources and external web applications while maintaining security best practices.</p></div></div>
+                <div style="width: 45%;"><img src="./image/cors2.jpg" id="pim" class="project-img w-100 h-100" alt="Tech"></div>
+            </div>
+        </div>
+    </div>
+
+   <div id="resume" class="container py-5 mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="display-5 fw-bold">Resume</h2>
+            <a href="resume.pdf" download class="btn btn-primary rounded-pill shadow-sm">
+                <i class="bi bi-download me-2"></i>Download PDF
+            </a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12">
+                <h4 class="text-primary fw-bold mb-4">Experience</h4>
+                <div class="bg-white p-5 rounded-4 shadow-sm d-flex">
+                    <div style="width: 40%;">
+                        <h5 class="fw-bold">2025 - Present</h5>
+                        <p class="text-primary mb-0 fw-semibold">INTERNSHIP</p>
+                        <p class="text-muted">JSpiders, Hyderabad</p>
+                    </div>
+                    <div style="width: 60%;">
+                        <p>Specialized in Java Full Stack Development. Mastering Spring Boot, Microservices, and REST API design while building enterprise-grade applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <h4 class="text-primary fw-bold mb-4">Education</h4>
+                <div class="bg-white p-5 rounded-4 shadow-sm d-flex mb-3">
+                    <div style="width: 40%;">
+                        <h5 class="fw-bold">2022 - 2024</h5>
+                        <p class="text-primary mb-0 fw-semibold">MCA</p>
+                        <p class="text-muted small">Atal Bihari Vajpayee Vishwavidyalaya</p>
+                    </div>
+                    <div style="width: 60%;">
+                        <p>Focused on Java programming with a strong focus on cloud-native applications, distributed systems, and database performance.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-4 shadow-sm d-flex">
+                    <div style="width: 40%;">
+                        <h5 class="fw-bold">2019 - 2022</h5>
+                        <p class="text-primary mb-0 fw-semibold">BCA</p>
+                        <p class="text-muted small">DLS PG College, Bilaspur</p>
+                    </div>
+                    <div style="width: 60%;">
+                        <p>Focused on Java programming, web technologies, cloud computing, and efficient DBMS design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <h4 class="text-primary fw-bold mb-4">Professional Skillset</h4>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="skill-section shadow-sm h-100">
+                            <div class="skill-header p-2 text-center mb-3">Languages & Frameworks</div>
+                            <ul class="ms-3">
+                                <li>Java (J2EE)</li>
+                                <li>JDBC</li>
+                                <li>servlet</li>
+                                <li>Spring REST-Api</li>
+                                <li>Hibernate</li>
+                                <li>Spring Boot</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-section shadow-sm h-100">
+                            <div class="skill-header p-2 text-center mb-3">Frontend & Databases</div>
+                            <ul class="ms-3">
+                                <li>Bootstrap 5</li>
+                                <li>HTML5 / CSS3</li>
+                                <li>Oracle</li>
+                                <li>MySQL</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-section shadow-sm h-100">
+                            <div class="skill-header p-2 text-center mb-3">Cloud & Tools</div>
+                            <ul class="ms-3">
+                                <li>AWS EC2 / EBS / S3</li>
+                                <li>AWS Elastic Block Storage</li>
+                                <li>AWS EFS</li>
+                                <li>AWS IAM</li>
+                                <li>Git / GitHub</li>
+                                <li>Postman</li>
+                                <li>Eclipse / VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <div id="contact" class="container py-5 my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-white p-5 rounded-4 shadow">
+                <h2 class="fw-bold text-center mb-4">Get In Touch</h2>
+                
+                <form action="https://formspree.io/f/xnjjjjol" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Name</label>
+                        <input type="text" name="name" class="form-control bg-light border-0 p-3" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Email</label>
+                        <input type="email" name="email" class="form-control bg-light border-0 p-3" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Message</label>
+                        <textarea name="message" class="form-control bg-light border-0 p-3" rows="4" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <button type="submit" class="btn btn-primary w-100 py-3 rounded-3 shadow">Send Message</button>
+                </form>
+                </div>
+        </div>
+    </div>
+
+   <footer class="bg-white py-5 border-top">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-1">RAVI KUMAR BAGHEL</h5>
+            <p class="text-muted small mb-4">Java Full Stack Developer</p>
+            <div class="d-flex justify-content-center gap-4 fs-4 mb-4">
+                <a class="text-dark" href="https://www.linkedin.com/in/ravi-baghel-41193a328/"><i class="bi bi-linkedin"></i></a>
+                <a class="text-dark" href="https://www.instagram.com/ravibaghel927"><i class="bi bi-instagram"></i></a>
+                <a class="text-dark" href="mailto:baghelravi6806@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>
